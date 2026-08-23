@@ -15,7 +15,7 @@
       },
       "no-mix-dearu-desumasu": {
         "preferInHeader": "",
-        "preferInBody": "ですます",
+        "preferInBody": "である",
         "preferInList": "",
         "strict": false
       },
