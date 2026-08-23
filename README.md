@@ -29,7 +29,27 @@
 
 ### Phase 0
 
-> TODO: AWS構成図
+![Phase 0 Architecture](./docs/archtecture/phase-0.png)
+
+Phase 0では、AWSの基本的なネットワーク構成と各サービスの役割を理解するため、
+Application Load Balancer (ALB)、EC2、RDSを用いたWebアプリケーション構成を採用する。
+
+主な設計方針は以下の通りである。
+
+- VPC内に2つのAvailability Zoneを用意し、それぞれにPublic、Application、Database用のSubnetを配置する
+- ALBは2つのPublic Subnetを使用する
+- Phase 0では冗長化そのものを目的としないため、EC2とRDSは1つのAvailability Zoneにのみ配置する
+- EC2はPrivate Subnetに配置し、Internetから直接アクセスさせない
+- InternetからALBまではHTTPS、ALBからRails/PumaまではHTTPを使用する
+- RDS for MySQLはPrivate Subnetに配置し、EC2からのみ接続する
+- Security Group間の参照により、ALB → EC2 → RDSの通信経路を制限する
+- Private SubnetからInternetへの通信が必要な場合のみNAT Gatewayを作成し、不要時は削除する
+
+Phase 0では、可用性を最大化した本番構成を再現することよりも、
+VPC、Subnet、Route Table、Security Group、ALB、EC2、RDSなどの基本要素と、
+それらの通信経路を理解することを優先する。
+
+構成図の編集用ファイルは [`docs/architecture/phase-0.drawio`](./docs/architecture/phase-0.drawio) に配置している。
 
 #### Planned Scope
 
