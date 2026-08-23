@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sky-y/aws-portfolio/issues"
   },
-  "homepage": "https://github.com/sky-y/aws-portfolio#readme"
+  "homepage": "https://github.com/sky-y/aws-portfolio#readme",
+  "devDependencies": {
+    "markdownlint-cli2": "^0.23.2"
+  }
 }
