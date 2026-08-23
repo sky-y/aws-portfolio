@@ -1,0 +1,58 @@
+import fs from "node:fs";
+
+const targets = JSON.parse(
+  fs.readFileSync(new URL("./lint-targets.json", import.meta.url), "utf8")
+);
+
+export default {
+  globs: targets.markdownlint.include,
+  ignores: targets.markdownlint.exclude,
+
+  config: {
+    default: true,
+
+    MD003: {
+      style: "atx"
+    },
+
+    MD004: {
+      style: "dash"
+    },
+
+    MD013: false,
+
+    MD024: {
+      siblings_only: true
+    },
+
+    MD029: {
+      style: "one_or_ordered"
+    },
+
+    MD033: false,
+
+    MD046: {
+      style: "fenced"
+    },
+
+    MD048: {
+      style: "backtick"
+    },
+
+    MD049: {
+      style: "asterisk"
+    },
+
+    MD050: {
+      style: "asterisk"
+    },
+
+    MD055: {
+      style: "leading_and_trailing"
+    },
+
+    MD060: {
+      style: "any"
+    }
+  }
+};

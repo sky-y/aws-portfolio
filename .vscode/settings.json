@@ -1,0 +1,3 @@
+{
+  "textlint.targetPath": "{README.md,docs/roadmap.md,docs/architecture.md,docs/adr/**/*.md}"
+}

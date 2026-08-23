@@ -1,0 +1,16 @@
+{
+  "markdownlint": {
+    "include": [
+      "**/*.md"
+    ],
+    "exclude": []
+  },
+  "textlint": {
+    "include": [
+      "README.md",
+      "docs/roadmap.md",
+      "docs/architecture.md",
+      "docs/adr/**/*.md"
+    ]
+  }
+}

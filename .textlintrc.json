@@ -1,0 +1,35 @@
+{
+  "rules": {
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        "max": 120
+      },
+      "max-ten": {
+        "max": 4
+      },
+      "max-comma": {
+        "max": 4
+      },
+      "max-kanji-continuous-len": {
+        "max": 8
+      },
+      "no-mix-dearu-desumasu": {
+        "preferInHeader": "",
+        "preferInBody": "ですます",
+        "preferInList": "",
+        "strict": false
+      },
+      "ja-no-weak-phrase": false
+    },
+    "@textlint-ja/preset-ai-writing": {
+      "no-ai-list-formatting": true,
+      "no-ai-hype-expressions": true,
+      "no-ai-emphasis-patterns": true,
+      "no-ai-colon-continuation": true,
+      "ai-tech-writing-guideline": {
+        "severity": "info",
+        "enableDocumentAnalysis": true
+      }
+    }
+  }
+}
