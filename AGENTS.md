@@ -208,6 +208,15 @@ If validation cannot be completed, state:
 
 ## Documentation
 
+Before creating or substantially modifying project documentation, read
+`docs/documentation-policy.md`.
+
+During development, Japanese documentation is the source of truth.
+
+Keep canonical technical terminology, including AWS service names, Terraform,
+Docker, CI/CD, and Observability, in English where appropriate. Do not create
+or maintain English translations unless explicitly requested.
+
 Keep documentation consistent with the implementation and established project decisions.
 
 Update documentation when a change makes existing documentation materially incorrect or misleading.
@@ -231,6 +240,9 @@ Preserve explicit `TODO`, unresolved, provisional, or undecided items unless the
 
 Do not convert a proposal, assumption, or Codex suggestion into documented project policy without a user decision.
 
+Do not introduce generic best practices, unsupported rationale, or speculative
+implementation details merely to make documentation appear more complete.
+
 When documenting architecture, distinguish between:
 
 - the current implementation;
@@ -238,5 +250,12 @@ When documenting architecture, distinguish between:
 - a planned future change;
 - an unresolved issue;
 - a Codex suggestion.
+
+Prefer clear, direct, project-specific documentation over unnecessarily
+comprehensive or polished prose. The project owner should be able to
+understand and explain the substantive content of the documentation.
+
+When a documentation change affects architecture or project policy, review
+related documents for inconsistencies before completing the change.
 
 Avoid comments that merely restate the code. Use comments for non-obvious constraints, intent, trade-offs, or behavior.
