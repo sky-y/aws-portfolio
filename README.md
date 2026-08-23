@@ -95,7 +95,7 @@
 > - Systems Manager Session Managerの採用
 > - NAT Gatewayを常設しない運用
 > - Terraformの段階的導入
-
+>
 > TODO: 後続Phaseの主要な設計判断を追加する。
 > TODO: READMEが長くなった場合は、代表的な判断だけを残してADRへ委譲する。
 
