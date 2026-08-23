@@ -1,0 +1,4 @@
+{
+  "textlint.run": "onSave",
+  "textlint.targetPath": ""
+}

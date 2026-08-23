@@ -1,0 +1,28 @@
+{
+  "name": "aws-portfolio",
+  "version": "1.0.0",
+  "description": "aws portfolio",
+  "main": "index.js",
+  "scripts": {
+    "lint:md": "markdownlint-cli2",
+    "lint:text": "node scripts/textlint.mjs",
+    "lint:docs": "npm run lint:markdown && npm run lint:text"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sky-y/aws-portfolio.git"
+  },
+  "author": "sky-y",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sky-y/aws-portfolio/issues"
+  },
+  "homepage": "https://github.com/sky-y/aws-portfolio#readme",
+  "devDependencies": {
+    "@textlint-ja/textlint-rule-preset-ai-writing": "^1.7.0",
+    "jsonc-parser": "^3.3.1",
+    "markdownlint-cli2": "^0.23.2",
+    "textlint": "^15.8.0",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2"
+  }
+}
