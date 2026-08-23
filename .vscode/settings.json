@@ -1,4 +1,5 @@
 {
   "textlint.run": "onSave",
-  "textlint.targetPath": ""
+  "textlint.targetPath": "",
+  "editor.tabSize": 2
 }
