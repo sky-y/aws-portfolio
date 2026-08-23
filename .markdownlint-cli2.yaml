@@ -1,7 +1,7 @@
 globs:
-  - "README.md"
-  - "AGENTS.md"
-  - "docs/**/*.md"
+  - "**/*.md"
+
+gitignore: true
 
 config:
   default: true
