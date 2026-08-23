@@ -1,11 +1,11 @@
 ---
 name: documentation-maintenance
-description: >-
+description: >
   Create, update, or review project documentation while preserving established
   project decisions, unresolved items, document responsibilities, and the
   repository documentation policy. Use for substantial changes to README.md,
   docs/roadmap.md, docs/adr/, and other project documentation.
-------------------------------------------------------------
+---
 
 # Documentation Maintenance
 
