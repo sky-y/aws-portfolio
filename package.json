@@ -4,9 +4,9 @@
   "description": "aws portfolio",
   "main": "index.js",
   "scripts": {
-    "sync:lint-config": "node scripts/sync-lint-config.mjs",
-    "check:lint-config": "npm run sync:lint-config && git diff --exit-code -- .vscode/settings.json",
-    "lint:text": "node scripts/textlint.mjs"
+    "lint:md": "markdownlint-cli2",
+    "lint:text": "node scripts/textlint.mjs",
+    "lint:docs": "npm run lint:markdown && npm run lint:text"
   },
   "repository": {
     "type": "git",

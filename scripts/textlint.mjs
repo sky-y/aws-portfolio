@@ -22,14 +22,24 @@ if (!Array.isArray(textlintTargets) || textlintTargets.length === 0) {
   );
 }
 
+const npxCommand = process.platform === "win32"
+  ? "npx.cmd"
+  : "npx";
+
 const result = spawnSync(
-  "npx",
-  ["textlint", ...textlintTargets],
+  npxCommand,
+  [
+    "textlint",
+    ...textlintTargets,
+  ],
   {
     cwd: projectRoot,
     stdio: "inherit",
-    shell: process.platform === "win32",
   },
 );
+
+if (result.error) {
+  throw result.error;
+}
 
 process.exit(result.status ?? 1);

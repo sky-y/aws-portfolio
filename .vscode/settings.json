@@ -1,3 +1,4 @@
 {
-  "textlint.targetPath": "{README.md,docs/roadmap.md,docs/architecture.md,docs/adr/**/*.md}"
+  "textlint.run": "onSave",
+  "textlint.targetPath": ""
 }
